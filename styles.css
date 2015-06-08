@@ -1,25 +1,35 @@
+body {
+  font-family: arial,sans-serif;
+}
+
 .header {
   position:absolute;
-  top: 0;
+  top: 10px;
   left: 0;
-  width: 100%;
+  right: 0;
 }
 
-.header p {
+.header-container {
   float: right;
-  margin-right: 40px;
-}
-
-.text-container {
-
+  min-width: 272px;
+  padding-right: 30px;
 }
 
 .header-text {
-
+  display: inline-block;
+  line-height: 24px;
+  outline: none;
+  vertical-align: middle;
+  font-size: 13px;
 }
 
-.icon-container {
+.header-text.after-first {
+  padding-left: 15px;
+}
 
+.app-icon {
+  padding-left: 15px;
+  margin-top: 6px;
 }
 
 .main {
@@ -78,4 +88,39 @@
   border: 1px solid #c6c6c6;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #222;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 10pt;
+  height: 35px;
+  background: #f2f2f2;
+  border-top: 1px solid e4e4e4;
+  line-height: 40px;
+  min-width: 980px;
+  white-space: nowrap;
+}
+
+.footer-container-right {
+  margin-right: 30px;
+  float: right;
+}
+
+.footer-container-left {
+  margin-left: 30px;
+}
+
+#footer a {
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+  padding-left: 27px;
+}
+
+.header-container a {
+  color: #666;
+  text-decoration: none;
 }
